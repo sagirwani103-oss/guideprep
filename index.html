@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10172a">
+<title>GuidePrep — Class 9 & 10</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+:root{--bg:#0b1020;--panel:#131b30;--panel2:#19233c;--text:#edf2ff;--muted:#9eabc8;--line:#273451;--accent:#8b7cff;--green:#4adea2;--orange:#ffbd69;--red:#ff718b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top left,#1b2450 0,transparent 42%),var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}button,input,select{font:inherit}button{cursor:pointer}.app{max-width:1200px;margin:auto;padding:22px}.top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:24px}.brand{display:flex;align-items:center;gap:12px}.logo{display:grid;place-items:center;width:46px;height:46px;border-radius:15px;background:linear-gradient(135deg,#8b7cff,#4cc9f0);font-weight:900;font-size:20px;color:#08101f}.brand h1{font-size:20px;margin:0}.brand p{margin:2px 0 0;color:var(--muted);font-size:12px}.top-actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:12px;padding:10px 14px}.btn.primary{background:var(--accent);border-color:transparent;color:white;font-weight:700}.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:16px;margin-bottom:18px}.welcome,.focus,.stat,.panel{background:linear-gradient(145deg,rgba(25,35,60,.96),rgba(16,24,43,.96));border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 12px 32px #00000017}.eyebrow{color:#b8b0ff;text-transform:uppercase;letter-spacing:1.4px;font-size:11px;font-weight:800}.welcome h2{font-size:clamp(25px,4vw,38px);line-height:1.15;margin:9px 0}.welcome p,.muted{color:var(--muted)}.welcome p{max-width:580px}.progress-row{display:flex;justify-content:space-between;gap:10px;font-size:13px;margin:18px 0 8px}.track{height:10px;background:#0b1122;border-radius:99px;overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,#8b7cff,#4adea2);border-radius:99px;transition:width .25s}.focus{display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(145deg,#282054,#172747)}.focus h3{margin:8px 0 3px;font-size:21px}.focus .big{font-size:36px;font-weight:850;letter-spacing:-1px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-bottom:18px}.stat{padding:17px}.stat .label{font-size:12px;color:var(--muted)}.stat .num{font-size:27px;font-weight:800;margin:6px 0}.stat .hint{font-size:11px;color:var(--muted)}.content{display:grid;grid-template-columns:1.25fr .75fr;gap:16px}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:16px}.panel h3{margin:0;font-size:18px}.filters{display:flex;gap:8px;flex-wrap:wrap}.field{background:#0c1427;border:1px solid var(--line);border-radius:10px;color:var(--text);padding:9px 10px;max-width:100%}.subject-list{display:grid;gap:10px}.subject{background:#0e172b;border:1px solid var(--line);border-radius:15px;padding:14px}.subject-top{display:flex;align-items:center;gap:10px}.subject-icon{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#24274c;font-size:19px}.subject-name{flex:1}.subject-name strong{display:block}.subject-name small{color:var(--muted)}.pct{font-weight:800}.subject .track{height:7px;margin-top:12px}.subject-actions{display:flex;gap:7px;margin-top:12px;flex-wrap:wrap}.mini{padding:7px 10px;font-size:12px;border-radius:9px}.chapter-list{display:grid;gap:10px}.chapter{display:flex;gap:10px;align-items:flex-start;padding:12px;border:1px solid var(--line);border-radius:13px;background:#0e172b}.chapter input{accent-color:var(--green);width:18px;height:18px;margin-top:3px}.chapter-main{flex:1;min-width:0}.chapter-title{font-weight:650}.chapter-sub{font-size:12px;color:var(--muted)}.chapter.done .chapter-title{text-decoration:line-through;color:var(--muted)}.tag{font-size:10px;padding:4px 7px;border-radius:99px;background:#292650;color:#c8c2ff;white-space:nowrap}.empty{padding:22px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}.notice{font-size:12px;color:var(--muted);margin-top:12px}.footer{text-align:center;color:var(--muted);font-size:12px;padding:22px 0 8px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#edf2ff;color:#10172a;padding:10px 15px;border-radius:12px;box-shadow:0 8px 30px #0005;display:none;z-index:5}.modal{position:fixed;inset:0;background:#050914c9;display:none;place-items:center;padding:18px;z-index:10}.modal-card{width:min(520px,100%);background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px}.modal-card h3{margin-top:0}.form-grid{display:grid;gap:12px}.form-grid label{display:grid;gap:5px;color:var(--muted);font-size:12px}.form-grid .field{width:100%}.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}
+@media(max-width:820px){.hero,.content{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.app{padding:14px}.welcome,.focus,.panel{padding:17px}.stat{padding:14px}.top{margin-bottom:16px}}
+@media(max-width:380px){.stats{gap:8px}.stat .num{font-size:23px}.brand h1{font-size:18px}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand"><div class="logo">ST</div><div><h1>GuidePrep <span style="color:#9e91ff">CBSE</span></h1><p>Your Study. Your Progress. Your Future.</p></div></div>
+    <div class="top-actions">
+      <button class="btn" id="exportBtn">Export backup</button>
+      <button class="btn" id="importBtn">Import backup</button>
+      <button class="btn primary" id="addBtn">＋ Add chapter</button>
+      <input id="importFile" type="file" accept="application/json" hidden>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="welcome">
+      <div class="eyebrow">Your learning dashboard</div>
+      <h2>Small steps.<br><span style="color:#a99dff">Big progress.</span></h2>
+      <p>Apne chapters ko track karo, completed topics mark karo, aur board preparation ko organised rakho.</p>
+      <div class="progress-row"><span>Overall syllabus completion</span><strong id="overallText">0%</strong></div>
+      <div class="track"><div class="fill" id="overallFill"></div></div>
+    </div>
+    <div class="focus">
+      <div><div class="eyebrow">Keep it consistent</div><h3>One chapter at a time</h3><p class="muted" style="margin:0">Aaj ka target choose karo aur complete hone par tick kar do.</p></div>
+      <div><div class="big" id="todayCount">0/3</div><div class="muted">sample daily target chapters completed</div><button class="btn primary" id="dailyBtn" style="margin-top:14px">Set daily target</button></div>
+    </div>
+  </section>
+  <section class="stats">
+    <div class="stat"><div class="label">Total chapters</div><div class="num" id="totalNum">0</div><div class="hint">Across all subjects</div></div>
+    <div class="stat"><div class="label">Completed</div><div class="num" id="doneNum">0</div><div class="hint">Chapters checked off</div></div>
+    <div class="stat"><div class="label">In progress</div><div class="num" id="progressNum">0</div><div class="hint">Started, not completed</div></div>
+    <div class="stat"><div class="label">Subjects</div><div class="num" id="subjectNum">0</div><div class="hint">Customisable list</div></div>
+  </section>
+  <section class="content">
+    <div class="panel">
+      <div class="panel-head"><h3>📚 Subject progress</h3><div class="filters"><select class="field" id="classFilter" aria-label="Class"><option value="10">Class 10</option><option value="9">Class 9</option></select><select class="field" id="subjectFilter" aria-label="Subject"><option value="All">All subjects</option></select></div></div>
+      <div class="subject-list" id="subjectList"></div>
+      <p class="notice">Note: Sample chapter list is for demo. Apne current CBSE syllabus ke hisaab se chapters edit/add kar lena.</p>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3>✅ Chapter checklist</h3><span class="tag" id="chapterCount">0 chapters</span></div>
+      <div class="filters" style="margin-bottom:12px"><select class="field" id="statusFilter"><option value="all">All status</option><option value="pending">Pending</option><option value="progress">In progress</option><option value="done">Completed</option></select><input class="field" id="searchBox" placeholder="Search chapter..." aria-label="Search chapter"></div>
+      <div class="chapter-list" id="chapterList"></div>
+      <p class="notice">Progress isi browser/device par save hota hai. Online host karne se data automatically dusre phone par sync nahi hota.</p>
+    </div>
+  </section>
+  <div class="footer">Made for focused learning · Free starter project · Not affiliated with CBSE</div>
+</div>
+<div class="toast" id="toast"></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-card"><h3 id="modalTitle">Add a chapter</h3><div id="modalBody"></div><div class="modal-actions"><button class="btn" id="cancelModal">Cancel</button><button class="btn primary" id="saveModal">Save</button></div></div>
+</div>
+<script>
+const starter = [
+ {id:crypto.randomUUID(),classNo:"10",subject:"Mathematics",icon:"📐",name:"Real Numbers",status:"pending"},
+ {id:crypto.randomUUID(),classNo:"10",subject:"Mathematics",icon:"📐",name:"Polynomials",status:"pending"},
+ {id:crypto.randomUUID(),classNo:"10",subject:"Mathematics",icon:"📐",name:"Pair of Linear Equations in Two Variables",status:"pending"},
+ {id:crypto.randomUUID(),classNo:"10",subject:"Science",icon:"🔬",name:"Chemical Reactions and Equations",status:"pending"},
+ {id:crypto.randomUUID(),classNo:"10",subject:"Science",icon:"🔬",name:"Acids, Bases and Salts",status:"pending"},
+ {id:crypto.randomUUID(),classNo:"10",subject:"Science",icon:"🔬",name:"Light – Reflection and Refraction",status:"pending"},
+ {id:crypto.randomUUID(),classNo:"10",subject:"Social Science",icon:"🌍",name:"Resources and Development",status:"pending"},
+ {id:crypto.randomUUID(),classNo:"10",subject:"Social Science",icon:"🌍",name:"Nationalism in India",status:"pending"},
+ {id:crypto.randomUUID(),classNo:"10",subject:"English",icon:"📖",name:"Reading and Writing Skills",status:"pending"},
+ {id:crypto.randomUUID(),classNo:"10",subject:"Hindi",icon:"🖋️",name:"अपठित बोध और लेखन",status:"pending"},
+ {id:crypto.randomUUID(),classNo:"9",subject:"Mathematics",icon:"📐",name:"Number Systems",status:"pending"},
+ {id:crypto.randomUUID(),classNo:"9",subject:"Science",icon:"🔬",name:"Matter in Our Surroundings",status:"pending"},
+ {id:crypto.randomUUID(),classNo:"9",subject:"Social Science",icon:"🌍",name:"The French Revolution",status:"pending"},
+ {id:crypto.randomUUID(),classNo:"9",subject:"English",icon:"📖",name:"Reading Skills",status:"pending"}
+];
+const key="studytrack-cbse-v1";
+let data;
+try { data=JSON.parse(localStorage.getItem(key)) || {chapters:starter,dailyTarget:3}; } catch { data={chapters:starter,dailyTarget:3}; }
+if(!Array.isArray(data.chapters)) data.chapters=starter;
+let modalMode="add";
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function save(){localStorage.setItem(key,JSON.stringify(data));render(); }
+function toast(msg){const t=$("toast");t.textContent=msg;t.style.display="block";setTimeout(()=>t.style.display="none",2200)}
+function currentClass(){return $("classFilter").value}
+function filtered(){let list=data.chapters.filter(c=>c.classNo===currentClass());let sub=$("subjectFilter").value;if(sub!=="All")list=list.filter(c=>c.subject===sub);let status=$("statusFilter").value;if(status!=="all")list=list.filter(c=>c.status===status);let q=$("searchBox").value.trim().toLowerCase();if(q)list=list.filter(c=>c.name.toLowerCase().includes(q)||c.subject.toLowerCase().includes(q));return list}
+function render(){
+ const cls=data.chapters.filter(c=>c.classNo===currentClass());
+ const total=cls.length,done=cls.filter(c=>c.status==="done").length,started=cls.filter(c=>c.status==="progress").length,pct=total?Math.round(done/total*100):0;
+ $("overallText").textContent=pct+"%";$("overallFill").style.width=pct+"%";
+ $("totalNum").textContent=data.chapters.length;$("doneNum").textContent=data.chapters.filter(c=>c.status==="done").length;$("progressNum").textContent=data.chapters.filter(c=>c.status==="progress").length;$("subjectNum").textContent=new Set(cls.map(c=>c.subject)).size;
+ $("todayCount").textContent=Math.min(done, data.dailyTarget||3)+"/"+(data.dailyTarget||3);
+ const allSubjects=[...new Set(cls.map(c=>c.subject))].sort();const old=$("subjectFilter").value;
+ $("subjectFilter").innerHTML='<option value="All">All subjects</option>'+allSubjects.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join("");
+ if(allSubjects.includes(old))$("subjectFilter").value=old;
+ const groups=allSubjects.map(s=>{let a=cls.filter(c=>c.subject===s),d=a.filter(c=>c.status==="done").length,p=a.length?Math.round(d/a.length*100):0;let icons=a[0]?.icon||"📘";return {s,a,d,p,icons}});
+ $("subjectList").innerHTML=groups.length?groups.map(g=>`<div class="subject"><div class="subject-top"><div class="subject-icon">${esc(g.icons)}</div><div class="subject-name"><strong>${esc(g.s)}</strong><small>${g.d} of ${g.a.length} chapters complete</small></div><div class="pct">${g.p}%</div></div><div class="track"><div class="fill" style="width:${g.p}%"></div></div><div class="subject-actions"><button class="btn mini" data-filter-sub="${esc(g.s)}">View chapters</button><button class="btn mini" data-add-sub="${esc(g.s)}">＋ Add chapter</button></div></div>`).join(""):'<div class="empty">Is class ke liye chapters nahi hain. “Add chapter” se shuru karo.</div>';
+ const list=filtered();$("chapterCount").textContent=list.length+" chapters";
+ $("chapterList").innerHTML=list.length?list.map(c=>`<div class="chapter ${c.status==="done"?"done":""}"><input type="checkbox" data-done="${c.id}" ${c.status==="done"?"checked":""} aria-label="Mark ${esc(c.name)} completed"><div class="chapter-main"><div class="chapter-title">${esc(c.name)}</div><div class="chapter-sub">${esc(c.subject)} · Class ${esc(c.classNo)}</div><div class="subject-actions"><select class="field mini" data-status="${c.id}" aria-label="Chapter status"><option value="pending" ${c.status==="pending"?"selected":""}>Pending</option><option value="progress" ${c.status==="progress"?"selected":""}>In progress</option><option value="done" ${c.status==="done"?"selected":""}>Completed</option></select><button class="btn mini" data-edit="${c.id}">Edit</button><button class="btn mini" data-delete="${c.id}">Delete</button></div></div></div>`).join(""):'<div class="empty">Koi chapter nahi mila. Filter badlo ya chapter add karo.</div>';
+}
+function openModal(mode,chapter=null,subject=""){
+ modalMode=mode;const c=chapter||{classNo:currentClass(),subject:subject||"Science",name:"",icon:"📘",status:"pending"};
+ $("modalTitle").textContent=mode==="edit"?"Edit chapter":mode==="daily"?"Set daily target":"Add a chapter";
+ if(mode==="daily"){$("modalBody").innerHTML=`<div class="form-grid"><label>Daily chapter target<input class="field" id="fTarget" type="number" min="1" max="30" value="${data.dailyTarget||3}"></label></div>`;}
+ else {$("modalBody").innerHTML=`<div class="form-grid"><label>Class<select class="field" id="fClass"><option value="10">Class 10</option><option value="9">Class 9</option></select></label><label>Subject<input class="field" id="fSubject" maxlength="50" value="${esc(c.subject)}" placeholder="e.g. Science"></label><label>Chapter name<input class="field" id="fName" maxlength="120" value="${esc(c.name)}" placeholder="e.g. Electricity"></label><label>Icon (emoji, optional)<input class="field" id="fIcon" maxlength="8" value="${esc(c.icon)}"></label><label>Status<select class="field" id="fStatus"><option value="pending">Pending</option><option value="progress">In progress</option><option value="done">Completed</option></select></label></div>`;$("fClass").value=c.classNo;$("fStatus").value=c.status;}
+ $("modal").style.display="grid";$("saveModal").dataset.editId=chapter?.id||"";
+}
+function closeModal(){$("modal").style.display="none"}
+$("addBtn").onclick=()=>openModal("add");
+$("dailyBtn").onclick=()=>openModal("daily");
+$("cancelModal").onclick=closeModal;
+$("saveModal").onclick=()=>{
+ if(modalMode==="daily"){const n=Number($("fTarget").value);if(!Number.isFinite(n)||n<1||n>30){toast("Target 1 se 30 ke beech rakho.");return}data.dailyTarget=n;save();closeModal();toast("Daily target saved!");return}
+ const subject=$("fSubject").value.trim(),name=$("fName").value.trim();if(!subject||!name){toast("Subject aur chapter name zaroori hai.");return}
+ const id=$("saveModal").dataset.editId;
+ const obj={classNo:$("fClass").value,subject, name,icon:$("fIcon").value.trim()||"📘",status:$("fStatus").value};
+ if(modalMode==="edit"){data.chapters=data.chapters.map(c=>c.id===id?{...c,...obj}:c)}else data.chapters.push({id:crypto.randomUUID(),...obj});
+ save();closeModal();toast("Saved successfully!");
+};
+document.addEventListener("change",e=>{
+ if(e.target.id==="classFilter"){render();return}
+ if(e.target.id==="subjectFilter"||e.target.id==="statusFilter") {render();return}
+ if(e.target.dataset.done){const c=data.chapters.find(c=>c.id===e.target.dataset.done);if(c)c.status=e.target.checked?"done":"pending";save();return}
+ if(e.target.dataset.status){const c=data.chapters.find(c=>c.id===e.target.dataset.status);if(c)c.status=e.target.value;save();}
+});
+document.addEventListener("input",e=>{if(e.target.id==="searchBox")render()});
+document.addEventListener("click",e=>{
+ const t=e.target.closest("button");if(!t)return;
+ if(t.dataset.filterSub){$("subjectFilter").value=t.dataset.filterSub;render()}
+ if(t.dataset.addSub)openModal("add",null,t.dataset.addSub);
+ if(t.dataset.edit){const c=data.chapters.find(c=>c.id===t.dataset.edit);if(c)openModal("edit",c)}
+ if(t.dataset.delete){const c=data.chapters.find(c=>c.id===t.dataset.delete);if(c&&confirm(`Delete "${c.name}"?`)){data.chapters=data.chapters.filter(x=>x.id!==c.id);save();toast("Chapter deleted.")}}
+});
+$("exportBtn").onclick=()=>{const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="studytrack-backup.json";a.click();URL.revokeObjectURL(url);toast("Backup export ho gaya.")};
+$("importBtn").onclick=()=>$("importFile").click();
+$("importFile").onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const v=JSON.parse(await f.text());if(!Array.isArray(v.chapters))throw Error();if(confirm("Current progress replace karna hai?")){data={chapters:v.chapters,dailyTarget:v.dailyTarget||3};save();toast("Backup imported.")}}catch{toast("Valid GuidePrep backup select karo.")}e.target.value=""};
+if("serviceWorker" in navigator && location.protocol.startsWith("http"))navigator.serviceWorker.register("./sw.js").catch(()=>{});
+render();
+</script>
+</body>
+</html>
